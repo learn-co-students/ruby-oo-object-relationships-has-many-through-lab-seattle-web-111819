@@ -27,10 +27,10 @@ Start with the `Artist`/`Song`/`Genre` domain.
 
 **The `Artist` model:**
 
-- The `Artist` class needs a class variable `@@all` that begins as an empty array
-- The `Artist` class needs a class method `.all` that lists each artist in the
+x- The `Artist` class needs a class variable `@@all` that begins as an empty array
+x- The `Artist` class needs a class method `.all` that lists each artist in the
   class variable
-- An artist is initialized with a name and is saved in the `@@all` array.
+x- An artist is initialized with a name and is saved in the `@@all` array.
 - The `Artist` class needs an instance method, `#new_song`, that takes in an
   argument of a name and genre creates a new song. That song should know that it
   belongs to the artist.
@@ -78,14 +78,14 @@ into_the_groove = Song.new("Into the Groove", madonna, pop)
 
 **The `Doctor` model:**
 
-- The `Doctor` class needs a class variable `@@all` that begins as an empty array.
-- The `Doctor` class needs a class method `.all` that lists each doctor in the
+x- The `Doctor` class needs a class variable `@@all` that begins as an empty array.
+x- The `Doctor` class needs a class method `.all` that lists each doctor in the
   class variable.
-- A doctor should be initialized with a name and be saved in the `@@all` array.
-- The `Doctor` class needs an instance method, `#new_appointment`, that takes in a
+x- A doctor should be initialized with a name and be saved in the `@@all` array.
+x- The `Doctor` class needs an instance method, `#new_appointment`, that takes in a
   an instance of the `Patient` class and a date, and creates a new `Appointment`. That
   `Appointment` should know that it belongs to the doctor
-- The `Doctor` class needs an instance method, `#appointments`, that iterates
+x- The `Doctor` class needs an instance method, `#appointments`, that iterates
   through all `Appointment`s and finds those belonging to this doctor.
 - The `Doctor` class needs an instance method, `#patients`, that iterates over
   that doctor's `Appointment`s and collects the patient that belongs to each
